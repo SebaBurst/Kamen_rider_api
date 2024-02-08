@@ -51,20 +51,18 @@ export const getKamenRider = async (req, res) => {
 }
 
 export const getKamenRidersFromSeries = async (req, res) => {
-    try {
-        const page = req.query.page || 1; //get the page from the query string
-        const offset = (page - 1) * ITEMS_PER_PAGE; //calculate the offset
-        const [rows]  = await pool.query('SELECT * FROM kamen_riders WHERE series = ? LIMIT ?, ?', [req.params.series, offset, ITEMS_PER_PAGE]); //await the pool to query the database
-        if(rows.length === 0) {
-            res.status(404).json({message: 'Kamen Rider Series not found'});
-            return;
-        }
-        
-        json(rows); //send the rows as a response
+   try{
+    const [rows]  = await pool.query('SELECT * FROM kamen_riders WHERE series = ?', [req.params.series]);
+    if(rows.length === 0) {
+        res.status(404).json({message: 'Kamen Riders not found'});
+        return;
     }
-    catch (error) {
-        res.status(500).json({message: 'Kamen Riders Api Error'});
-    }
+    res.json(rows); //send the rows as a response
+
+
+   }catch (error) {
+    res.status(500).json({message: 'Kamen Riders Series Api Error'});
+   }
 }
 
 export const getKamenRiderForms = async (req, res) => {
