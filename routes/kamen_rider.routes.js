@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getKamenRiders, createKamenRider, updateKamenRider, getKamenRider, getKamenRidersFromSeries, getKamenRiderForms } from "../controllers/kamen_rider.controller.js";
+import { getKamenRiders, createKamenRider, updateKamenRider, getKamenRider, getKamenRidersFromSeries, getKamenRiderForms, getKamenRiderForm} from "../controllers/kamen_rider.controller.js";
 
 
 const router = Router(); //create a new router
@@ -9,5 +9,6 @@ router.post('/kamen_riders', createKamenRider); //create a new route for GET req
 router.get('/kamen_riders/:name', getKamenRider); //create a new route for GET requests to /kamen_riders/:id
 router.get('/kamen_riders/series/:series', getKamenRidersFromSeries); //create a new route for GET requests to /kamen_riders/series/:series
 router.get('/kamen_riders/forms/:name', getKamenRiderForms); //create a new route for GET requests to /kamen_riders/forms/:name
+router.get('/kamen_riders/form/:form_name', getKamenRiderForm); //create a new route for GET requests to /kamen_riders/forms/:form_name
 
 export default router; //export the router

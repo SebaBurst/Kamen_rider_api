@@ -8,6 +8,10 @@ export const getKamenRiders = async (req, res) => { //create a new function call
         const page = req.query.page || 1; //get the page from the query string
         const offset = (page - 1) * ITEMS_PER_PAGE; //calculate the offset
         const [rows]  = await pool.query('SELECT * FROM kamen_riders LIMIT ?, ?', [offset, ITEMS_PER_PAGE]); //await the pool to query the database
+        if(rows.length === 0) { 
+            //if there are no rows
+            res.status(404).json({message: 'Kamen Riders not found'}); //send a 404 status and a message
+        }
         res.json(rows); //send the rows as a response
     } catch (error) {
         res.status(500).json({message: 'Kamen Riders Api Error'});
@@ -54,7 +58,7 @@ export const getKamenRidersFromSeries = async (req, res) => {
    try{
     const [rows]  = await pool.query('SELECT * FROM kamen_riders WHERE series = ?', [req.params.series]);
     if(rows.length === 0) {
-        res.status(404).json({message: 'Kamen Riders not found'});
+        res.status(404).json({message: 'Kamen Riders from Series not found'});
         return;
     }
     res.json(rows); //send the rows as a response
@@ -78,6 +82,20 @@ export const getKamenRiderForms = async (req, res) => {
         res.status(500).json({message: 'Kamen Riders Api Error'});
     }
 
+}
+
+export const getKamenRiderForm = async (req, res) => {
+    try{
+        const [rows]  = await pool.query('SELECT * FROM kamen_riders_forms WHERE form_name LIKE = %?%', [req.params.form_name]);
+        if(rows.length === 0) {
+            res.status(404).json({message: 'Kamen Rider Form not found'});
+            return;
+        }
+        res.json(rows); //send the rows as a response
+
+    }catch (error) {
+        res.status(500).json({message: 'Kamen Riders Api Error'});
+    }
 }
 
 export const updateKamenRider = (req, res) => {
