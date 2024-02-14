@@ -10,5 +10,4 @@ router.get('/kamen_riders/:name', getKamenRider); //create a new route for GET r
 router.get('/kamen_riders/series/:series', getKamenRidersFromSeries); //create a new route for GET requests to /kamen_riders/series/:series
 router.get('/kamen_riders/forms/:name', getKamenRiderForms); //create a new route for GET requests to /kamen_riders/forms/:name
 router.get('/kamen_riders/form/:form_name', getKamenRiderForm); //create a new route for GET requests to /kamen_riders/forms/:form_name
-
 export default router; //export the router

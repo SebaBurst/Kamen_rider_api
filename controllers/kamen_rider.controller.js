@@ -86,7 +86,7 @@ export const getKamenRiderForms = async (req, res) => {
 
 export const getKamenRiderForm = async (req, res) => {
     try{
-        const [rows]  = await pool.query('SELECT * FROM kamen_riders_forms WHERE form_name LIKE = %?%', [req.params.form_name]);
+        const [rows] = await pool.query('SELECT * FROM kamen_riders_forms WHERE form_name LIKE ?', [`%${req.params.form_name}%`]);
         if(rows.length === 0) {
             res.status(404).json({message: 'Kamen Rider Form not found'});
             return;
