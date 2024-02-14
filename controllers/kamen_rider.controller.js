@@ -57,8 +57,7 @@ export const getKamenRider = async (req, res) => {
         }
         const [forms] = await pool.query('SELECT * FROM kamen_riders_forms WHERE rider_id IN (SELECT id FROM kamen_riders WHERE name = ?)', [req.params.name]);
         if (forms.length === 0) {
-            res.status(404).json({ message: 'Kamen Rider not found' });
-            return;
+          [forms] = [];
         }
         const kamenRiderWithForms = {
             ...row[0],
