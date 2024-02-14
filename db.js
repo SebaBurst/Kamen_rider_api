@@ -7,6 +7,5 @@ export const pool = createPool({ // createPool is a method of mysql module
     password: DB_PASSWORD,     // The password of the database
     port: DB_PORT, // The port number of the database
     database: DB_DATABASE, // The name of the database
-    
 });
 
