@@ -55,7 +55,17 @@ export const getKamenRider = async (req, res) => {
             res.status(404).json({ message: 'Kamen Rider not found' });
             return;
         }
-        res.json(row[0]);
+        const [forms] = await pool.query('SELECT * FROM kamen_riders_forms WHERE rider_id IN (SELECT id FROM kamen_riders WHERE name = ?)', [req.params.name]);
+        if (forms.length === 0) {
+            res.status(404).json({ message: 'Kamen Rider not found' });
+            return;
+        }
+        const kamenRiderWithForms = {
+            ...row[0],
+            forms: forms
+        };
+
+        res.json(kamenRiderWithForms);
     }
     catch (error) {
         res.status(500).json({ message: 'Kamen Riders Api Error' });

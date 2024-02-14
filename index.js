@@ -7,6 +7,7 @@ import cors from 'cors'; //import cors
 const app = express(); //create an instance of express
 app.use(cors()); //use the cors middleware
 
+
 app.use(express.json()); //use the json middleware
 app.use('/api/', kamen_routes); //use the routes
 app.listen(PORT); //listen on port 3000 
