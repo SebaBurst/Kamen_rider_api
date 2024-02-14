@@ -18,7 +18,7 @@ export const getKamenRiders = async (req, res) => { //create a new function call
                 currentPage: page, //send the current page
                 itemsPerPage: ITEMS_PER_PAGE, //send the items per page
                 totalItems: allRiders.length, //send the total items
-                totalPages: Math.ceil(allRiders / ITEMS_PER_PAGE) //send the total pages
+                totalPages: Math.ceil(allRiders.length / ITEMS_PER_PAGE) //send the total pages
             },
             riders: rows //send the rows as a response 
         }); //send the rows as a response
