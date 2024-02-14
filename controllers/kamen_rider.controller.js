@@ -60,7 +60,7 @@ export const getKamenRider = async (req, res) => {
         if (forms.length === 0) {
             bool = true;
         }
-        if (bool == false) {
+        if (bool == true) {
             const kamenRiderWithForms = {
                 ...row[0],
                 forms: []
