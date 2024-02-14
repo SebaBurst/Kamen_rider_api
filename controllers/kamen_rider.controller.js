@@ -8,6 +8,7 @@ export const getKamenRiders = async (req, res) => { //create a new function call
         const page = req.query.page || 1; //get the page from the query string
         const offset = (page - 1) * ITEMS_PER_PAGE; //calculate the offset
         const [rows] = await pool.query('SELECT * FROM kamen_riders LIMIT ?, ?', [offset, ITEMS_PER_PAGE]); //await the pool to query the database
+        const [allRiders] = await pool.query('SELECT * FROM kamen_riders'); //await the pool to query the database
         if (rows.length === 0) {
             //if there are no rows
             res.status(404).json({ message: 'Kamen Riders not found' }); //send a 404 status and a message
@@ -16,8 +17,8 @@ export const getKamenRiders = async (req, res) => { //create a new function call
             pagination: {
                 currentPage: page, //send the current page
                 itemsPerPage: ITEMS_PER_PAGE, //send the items per page
-                totalItems: rows.length, //send the total items
-                totalPages: Math.ceil(rows.length / ITEMS_PER_PAGE) //send the total pages
+                totalItems: allRiders.length, //send the total items
+                totalPages: Math.ceil(allRiders / ITEMS_PER_PAGE) //send the total pages
             },
             riders: rows //send the rows as a response 
         }); //send the rows as a response
