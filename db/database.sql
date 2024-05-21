@@ -1,4 +1,4 @@
-CREATE DATABSE IF NOT EXISTS kamenRider;
+CREATE DATABASE IF NOT EXISTS kamenRider;
 USE kamenRider;
 
 CREATE TABLE kamen_riders (
@@ -19,8 +19,102 @@ CREATE TABLE kamen_riders_forms (
 );
 
 
-//
-INSERT INTO kamen_riders (name, series, image) VALUES ('Kamen Rider 1', 'Kamen Rider', 'https://vignette.wikia.nocookie.net/kamenrider/images/3/3e/Kamen_Rider_1.jpg/revision/latest/scale-to-width-down/340?cb=20110731183247');
+
+
+
+
+
+INSERT INTO kamen_riders(name, series, image) VALUES ('Gotchard', 'Gotchard', 'https://i.imgur.com/16X4NR9.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Majade', 'Gotchard', 'https://i.imgur.com/MiBRrBm.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Valvarad', 'Gotchard', 'https://i.imgur.com/kvHOFTp.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Gotchard_DayBreak', 'Gotchard', 'https://i.imgur.com/abdKsxf.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Dread', 'Gotchard', 'https://i.imgur.com/aB1z8o5.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Legend', 'Gotchard', 'https://i.imgur.com/kXXk1wn.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Geats', 'Geats', 'https://i.imgur.com/VKCduGg.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Tycoon', 'Geats', 'https://i.imgur.com/c3FpiAH.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Buffa', 'Geats', 'https://i.imgur.com/ViqVvl9.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Punk_Jack', 'Geats', 'https://i.imgur.com/60Bbvbr.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Na_go', 'Geats', 'https://i.imgur.com/XKXIVe1.png');
+
+//Revice
+INSERT INTO kamen_riders(name, series, image) VALUES ('Revi', 'Revice', 'https://i.imgur.com/lS6c2fS.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Vice', 'Revice', 'https://i.imgur.com/3AMpiua.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Live', 'Revice', 'https://i.imgur.com/tKz1CMe.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Evil', 'Revice', 'https://i.imgur.com/Qswx8LH.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Jeanne', 'Revice', 'https://i.imgur.com/hMNSzHy.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Demons', 'Revice', 'https://i.imgur.com/x4osImV.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Over_Demons', 'Revice', 'https://i.imgur.com/1SFsqy0.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Get_Over_Demons', 'Revice', 'https://i.imgur.com/HHeUXdG.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Juuga', 'Revice', 'https://i.imgur.com/5Vlj820.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Destream', 'Revice', 'https://i.imgur.com/vzomE3t.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Vail', 'Revice', 'https://i.imgur.com/8E9qbrw.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Aguilera', 'Revice', 'https://i.imgur.com/JN2riNZ.png');
+
+//saber
+INSERT INTO kamen_riders(name, series, image) VALUES ('Saber', 'Saber', 'https://i.imgur.com/C6v9NJH.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Blades', 'Saber', 'https://i.imgur.com/tlSyzH3.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Espada', 'Saber', 'https://i.imgur.com/MVSCKxX.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Kenzan', 'Saber', 'https://i.imgur.com/FsaCiGJ.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Calibur', 'Saber', 'https://i.imgur.com/4Mo0dj5.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Buster', 'Saber', 'https://i.imgur.com/0JUtoSl.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Slash', 'Saber', 'https://i.imgur.com/1lk5Scw.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Saikou', 'Saber', 'https://i.imgur.com/ug8iQX8.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Sabela', 'Saber', 'https://i.imgur.com/LevyHfM.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Durendal', 'Saber', 'https://i.imgur.com/mhHG4tC.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Solomon', 'Saber', 'https://i.imgur.com/p4J0gRx.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Falchion', 'Saber', 'https://i.imgur.com/u6BXLNR.png');
+
+
+
+//Zero-One
+INSERT INTO kamen_riders(name, series, image) VALUES ('Zero_One', 'Zero_One', 'https://i.imgur.com/tiAGRGs.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Vulcan', 'Zero_One', 'https://i.imgur.com/jKPbKBG.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Valkyrie', 'Zero_One', 'https://i.imgur.com/tZFnVpR.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Horobi', 'Zero_One', 'https://i.imgur.com/uWAgRxd.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Jin', 'Zero_One', 'https://i.imgur.com/CQ4Q9Ae.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Ikazuchi', 'Zero_One', 'https://i.imgur.com/BKtCfEO.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Thouser', 'Zero_One', 'https://i.imgur.com/NdCbojL.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Naki', 'Zero_One', 'https://i.imgur.com/kjPmIDm.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('ZeroZero_One', 'Zero_One', 'https://i.imgur.com/IiilKJo.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Ichi_Gata', 'Zero_One', 'https://i.imgur.com/6AMFjge.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Ark_Zero', 'Zero_One', 'https://i.imgur.com/kgnQ8ew.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Ark_One', 'Zero_One', 'https://i.imgur.com/wgV2E9G.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Metsubojinrai', 'Zero_One', 'https://i.imgur.com/0QbkEJT.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Zero_Two', 'Zero_One', 'https://i.imgur.com/HKjPAm7.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Zaia', 'Zero_One', 'https://i.imgur.com/7z80a9l.png');
+
+
+//zio
+INSERT INTO kamen_riders(name, series, image) VALUES ('Zi_O', 'Zi_O', 'https://i.imgur.com/Zgth48D.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Geiz', 'Zi_O', 'https://i.imgur.com/pFwADwl.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Woz', 'Zi_O', 'https://i.imgur.com/7Ca4eJH.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Tsukuyomi', 'Zi_O', 'https://i.imgur.com/8EdlHqN.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Shinobi', 'Zi_O', 'https://i.imgur.com/W3Ws2jj.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Quiz', 'Zi_O', 'https://i.imgur.com/YF4yguE.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Kikai', 'Zi_O', 'https://i.imgur.com/3PJLDh1.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Ginga', 'Zi_O', 'https://i.imgur.com/kdduhKJ.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Neo_Decade', 'Zi_O', 'https://i.imgur.com/EzwlJHV.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Ohma_Zi_O', 'Zi_O', 'https://i.imgur.com/g8ufRFP.png');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (1, "https://i.imgur.com/hMBUToC.png", "Super_Gotchard_X_Rex");
@@ -33,9 +127,13 @@ INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (1, "htt
 
 
 //buffa
-INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (9, "https://i.imgur.com/IudlN3Q.png", "Buffa_Poison_Rage");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (9, "https://i.imgur.com/hAuvLzM.png", "Buffa_Poison_Rage");
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (9, "https://i.imgur.com/NJLuhb8.png", "Buffa_Twin_Command");
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (9, "https://i.imgur.com/sPyzgzv.png", "Buffa_Jyamashin");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (9, "https://i.imgur.com/rxrsa3W.png", "Buffa_Jyamato");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (9, "https://i.imgur.com/pE7R6Ze.png", "Buffa_JyamatoZombie");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (9, "https://i.imgur.com/XT4Kajt.png", "Buffa_Ninja");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (9, "https://i.imgur.com/wstFBoY.png", "Buffa_Ouja");
 
 //geats
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/A89cAx7.png", "Geats_Monster");
@@ -44,9 +142,17 @@ INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "htt
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/9WExGzT.png", "Geats_Twin_Command");
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/v4AAW1V.png", "Geats_Mark_II");
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/TdJyo3D.png", "Geats_LaserBoost");
-INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/eV7b1M6.jpeg", "Geats_Mark_III");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/WSYNBFn.png", "Geats_Mark_III");
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/mmTnB2d.png", "Geats_Nine");
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/CHIyQ6P.png", "Geats_Oneness");
+
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/0JXJM1q.png", "Geats_BeatBoost");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/gu1NT5q.png", "Geats_FeverMagnum");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/fCl19vj.png", "Geats_Ninja");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/pJVsCYe.png", "Geats_Ryuki");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/eakp7zJ.png", "Geats_HammerMagnum");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/aqUjnVB.png", "Geats_Zombie");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (7, "https://i.imgur.com/6L2Dyj8.png", "Geats_WaterBoost");
 
 //kamen rider 
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (11, "https://i.imgur.com/xPhBlvE.jpeg", "Na-Go_Fantasy");
@@ -84,7 +190,7 @@ INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (15, "ht
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (17, "https://i.imgur.com/uNvT4aw.png", "Imperial_Demons");
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (16, "https://i.imgur.com/DqUmoxD.png", "Invincible_Jeanne");
 
-
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (5, "https://i.imgur.com/QBaUOrs.png", "Dread_Type_One");
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (3, "https://i.imgur.com/KP4rXQx.png", "Valvarad_OroshiShovel");
 
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (1, "https://i.imgur.com/cFBrtaB.png", "Gotchard_VenomMariner");
@@ -111,7 +217,7 @@ INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (24, "ht
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (24, "https://i.imgur.com/9V0eQTG.png", "Saber_EmotionalDragon");
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (24, "https://i.imgur.com/Gwl6Aqa.png", "Saber_DragonicKnight");
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (24, "https://i.imgur.com/hkf2SbA.png", "Saber_PrimitiveDragon");
-INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (24, "https://i.imgur.com/0rfO3zV.png", "Saber_ElemetalDragon");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (24, "https://i.imgur.com/0rfO3zV.png", "Saber_ElementalDragon");
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (24, "https://i.imgur.com/7hDqgqw.png", "Xross_Saber");
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (24, "https://i.imgur.com/7t9C1ZE.png", "Saber_UltimateBahamut");
 INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (24, "https://i.imgur.com/OlcEwju.png", "Saber_SuperHeroSenki");
@@ -153,9 +259,124 @@ INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (37, "ht
 
 
 //Valkyrie
-INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (38, "https://i.imgur.com/3z3Z3Zv.png", "Valkyrie_LightingHornet");
-INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (38, "https://i.imgur.com/3z3Z3Zv.png", "Valkyrie_JusticeServal");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (38, "https://i.imgur.com/HqyzxDT.png", "Valkyrie_LightingHornet");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (38, "https://i.imgur.com/vc0qIDs.png", "Valkyrie_JusticeServal");
+
+
+
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (3, "https://i.imgur.com/1ffhsGw.png", "Valvarad_AngelCopter");
+
+//tycoon
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (8, "https://i.imgur.com/68tsk34.png", "Tycoon_Boost");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (8, "https://i.imgur.com/RyubqBw.png", "Tycoon_NinjaBoost");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (8, "https://i.imgur.com/VfdALSN.png", "Tycoon_NinjaFever");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (8, "https://i.imgur.com/wnepbmB.png", "Tycoon_Mark_II");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (8, "https://i.imgur.com/SIfoh72.png", "Tycoon_Zombie");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (8, "https://i.imgur.com/mipJ0Jh.png", "Tycoon_Bujin_Boost");
+
+//Horobi
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (39, "https://i.imgur.com/pZbbXSJ.png", "Horobi_ArkScorpion");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (40, "https://i.imgur.com/r9GqZxv.png", "Jin_BurningFalcon");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (42, "https://i.imgur.com/CPfkbY5.png", "ArkThrouser");
+
+//zio
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/7pCUKqW.png", "Zi_O_BuildArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/3vjPgfD.png", "Zi_O_ExAidArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/NBqXdRw.png", "Zi_O_FourzeArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/i5SzWIj.png", "Zi_O_GhostArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/KVAPZKY.png", "Zi_O_OOOArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/3k9c3Qd.png", "Zi_O_GaimArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/jq9cyjU.png", "Zi_O_DoubleArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/AHMlPbL.png", "Zi_O_KuugaArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/XH3EuSs.png", "Zi_O_DecadeArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/cEdva1F.png", "Zi_O_DecadeArmor_BuildSparkling");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/R2pbMNH.png", "Zi_O_DecadeArmor_MightyBrothers");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/MsgU1HE.png", "Zi_O_DecadeArmor_GhostGrateful");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/MBNXwI9.png", "Zi_O_II");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/XFAMIlE.png", "Zi_O_Trinity");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/EBbVfcw.png", "Grand_Zi_O");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (51, "https://i.imgur.com/46Dgtk5.png", "Zi_O_OhmaForm");
+
+//Geiz
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (52, "https://i.imgur.com/CPjp4wL.png", "Geiz_GhostArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (52, "https://i.imgur.com/T0Qk112.png", "Geiz_DriveArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (52, "https://i.imgur.com/9rzuRsh.png", "Geiz_WizardArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (52, "https://i.imgur.com/p7ocKV1.png", "Geiz_FaizArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (52, "https://i.imgur.com/L7kPJOH.png", "Geiz_GemmArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (52, "https://i.imgur.com/BBBY9y4.png", "Geiz_BiriruArmor");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (52, "https://i.imgur.com/pPG2kQw.png", "Geiz_Revive_Shippu");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (52, "https://i.imgur.com/cAclj7s.png", "Geiz_Revive_Goretsu");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (52, "https://i.imgur.com/t50FwES.png", "Geiz_Majesty");
+
+//Woz
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (53, "https://i.imgur.com/ykTM8kt.png", "Woz_FuturingKikai");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (53, "https://i.imgur.com/SxAsSNB.png", "Woz_FuturingShinobi");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (53, "https://i.imgur.com/Vmwg4qk.png", "Woz_FuturingQuiz");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (53, "https://i.imgur.com/8lJLseo.png", "Woz_GingaFinaly");
+
+//Kamen rider
+
+INSERT INTO kamen_riders(name, series, image) VALUES ('Build', 'Build', 'https://i.imgur.com/qk6y8nd.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Cross_Z', 'Build', 'https://i.imgur.com/eapuHzS.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Grease', 'Build', 'https://i.imgur.com/Ao8YM8X.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Rogue', 'Build', 'https://i.imgur.com/9ZbfsSP.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Evolt', 'Build', 'https://i.imgur.com/DrcxSvO.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Mad_Rogue', 'Build', 'https://i.imgur.com/80944f4.png');
+
+//Ex_Aid
+INSERT INTO kamen_riders(name, series, image) VALUES ('Ex_Aid', 'Ex_Aid', 'https://i.imgur.com/3xB24oS.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Brave', 'Ex_Aid', 'https://i.imgur.com/9FAsIOh.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Snipe', 'Ex_Aid', 'https://i.imgur.com/2IoeFgQ.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Lazer', 'Ex_Aid', 'https://i.imgur.com/qaa05N2.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Genm', 'Ex_Aid', 'https://i.imgur.com/nhm7qnR.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('ParaDX', 'Ex_Aid', 'https://i.imgur.com/QCi8f1S.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Poppy', 'Ex_Aid', 'https://i.imgur.com/yOZceb9.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Cronus', 'Ex_Aid', 'https://i.imgur.com/LpWVY7D.png');
+
+
+
+//majade
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (2, "https://i.imgur.com/OkPbUjQ.png", "Majade_MoonCerberus");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (1, "https://i.imgur.com/krnLobA.png", "IronGotchard");
+
+//ghost
+
+INSERT INTO kamen_riders(name, series, image) VALUES ('Ghost', 'Ghost', 'https://i.imgur.com/20Lit0s.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Specter', 'Ghost', 'https://i.imgur.com/89i2fRm.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Necrom', 'Ghost', 'https://i.imgur.com/Ua8Lwtp.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Kanon', 'Ghost', 'https://i.imgur.com/0vsQZj9.png');
+
+
+//Grease
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (63, "https://i.imgur.com/ecvVVYR.png", "Grease_Blizzard");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (63, "https://i.imgur.com/sZhtWKx.png", "Grease_PerfectKingdom");
+
+//Cross_Z
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (62, "https://i.imgur.com/zTVdkbn.png", "Cross_Z_Charge");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (62, "https://i.imgur.com/nSuTXMT.png", "Cross_Z_Magma");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (62, "https://i.imgur.com/sK4FTFE.png", "Great_Cross_Z");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (62, "https://i.imgur.com/he1ctV6.png", "Cross_Z_Evol");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (62, "https://i.imgur.com/8945MYh.png", "Cross_Z_Build");
+
+//Rogue
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (64, "https://i.imgur.com/NzHfiGz.png", "Prime_Rogue");
+
+//Evolt
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (65, "https://i.imgur.com/O1GelPu.png", "Evol_Phase_2_Dragon");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (65, "https://i.imgur.com/E01npWV.png", "Evol_Phase_3_Rabbit");
+INSERT INTO kamen_riders_forms (rider_id, form_image, form_name) VALUES (65, "https://i.imgur.com/RTe1YYH.png", "Evol_Black_Hole");
+
+//Kamen rider Drive
+INSERT INTO kamen_riders(name, series, image) VALUES ('Drive', 'Drive', 'https://i.imgur.com/3v3Z3Zp.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Mach', 'Drive', 'https://i.imgur.com/3v3Z3Zp.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Chaser', 'Drive', 'https://i.imgur.com/3v3Z3Zp.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Heart', 'Drive', 'https://i.imgur.com/3v3Z3Zp.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Brain', 'Drive', 'https://i.imgur.com/3v3Z3Zp.png');
+INSERT INTO kamen_riders(name, series, image) VALUES ('Dark_Drive', 'Drive', 'https://i.imgur.com/3v3Z3Zp.png');
+
 
 
 
 describe kamen_riders;
+
+
