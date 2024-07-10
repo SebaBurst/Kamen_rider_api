@@ -1,6 +1,6 @@
 import { pool } from '../db.js';
 
-const ITEMS_PER_PAGE = 10;
+const ITEMS_PER_PAGE = 8;
 
 export const getKamenRiders = async (req, res) => {
     try {
