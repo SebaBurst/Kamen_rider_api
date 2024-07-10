@@ -1,14 +1,14 @@
-import express from 'express'; //import express
-import kamen_routes from './routes/kamen_rider.routes.js'; //import the routes
+import express from 'express';
+import kamen_routes from './routes/kamen_rider.routes.js';
 import { PORT } from './config.js';
-import cors from 'cors'; //import cors
+import cors from 'cors';
 
+const app = express();
 
-const app = express(); //create an instance of express
-app.use(cors()); //use the cors middleware
+app.use(cors());
+app.use(express.json());
+app.use('/api/', kamen_routes);
 
-
-app.use(express.json()); //use the json middleware
-app.use('/api/', kamen_routes); //use the routes
-app.listen(PORT); //listen on port 3000 
-
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
