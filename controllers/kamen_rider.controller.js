@@ -38,7 +38,8 @@ export const createKamenRider = async (req, res) => {
 
 export const getKamenRider = async (req, res) => {
     try {
-        const result = await pool.query('SELECT * FROM kamen_riders WHERE name = $1', [req.params.name]);
+        const name = req.params.name.toLowerCase();
+        const result = await pool.query('SELECT * FROM kamen_riders WHERE LOWER(name) = $1', [name]);
         const row = result.rows[0];
         if (!row) {
             res.status(404).json({ message: 'Kamen Rider not found' });
@@ -75,7 +76,8 @@ export const getKamenRidersFromSeries = async (req, res) => {
 
 export const getKamenRiderForms = async (req, res) => {
     try {
-        const result = await pool.query('SELECT * FROM kamen_riders_forms WHERE rider_id = (SELECT id FROM kamen_riders WHERE name = $1)', [req.params.name]);
+        const name = req.params.name.toLowerCase();
+        const result = await pool.query('SELECT * FROM kamen_riders_forms WHERE rider_id = (SELECT id FROM kamen_riders WHERE LOWER(name) = $1)', [name]);
         const rows = result.rows;
         if (rows.length === 0) {
             res.status(404).json({ message: 'Kamen Rider Forms not found' });
@@ -89,7 +91,8 @@ export const getKamenRiderForms = async (req, res) => {
 
 export const getKamenRiderForm = async (req, res) => {
     try {
-        const result = await pool.query('SELECT * FROM kamen_riders_forms WHERE form_name LIKE $1', [`%${req.params.form_name}%`]);
+        const formName = req.params.form_name.toLowerCase();
+        const result = await pool.query('SELECT * FROM kamen_riders_forms WHERE LOWER(form_name) LIKE $1', [`%${formName}%`]);
         const rows = result.rows;
         if (rows.length === 0) {
             res.status(404).json({ message: 'Kamen Rider Form not found' });
@@ -100,6 +103,7 @@ export const getKamenRiderForm = async (req, res) => {
         res.status(500).json({ message: 'Kamen Riders Api Error', error: error.message });
     }
 };
+
 
 export const updateKamenRider = (req, res) => {
     res.send('PUT /kamen_riders/:id');
